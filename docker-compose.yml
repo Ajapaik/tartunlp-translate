@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  translate:
+    build: .
+    image: laurielias/tartunlp-translate:latest
+    container_name: 'translate'
+    ports:
+      - 12346:12346
